@@ -21,11 +21,13 @@
       imageElement.setAttribute('src', 'images/ACDCBrianJohnson800_10_20.jpg');
       imageElement.setAttribute('onclick', 'biggerImage()');
       imageElement.setAttribute('class', 'active');
-      function biggerImage() {
-        imageElement.style.transform = "scale(2, 2)"
-      }
       divElement.append(imageElement);
       document.body.appendChild(divElement);
+      function biggerImage() {
+        divElement.style.transform = "scale(2)"
+      }
+
+      
     </script>
   </body>
 </html>
