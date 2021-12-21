@@ -14,18 +14,18 @@
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
-      <img src="images/ACDCBrianJohnson800_10_20.jpg" onclick="biggerImage()" id="img1">
-    <script>
+    <script defer>
       let divElement = document.createElement('div');
       divElement.setAttribute('class', 'image');
-      let imageELement = document.createElement('img');
+      let imageElement = document.createElement('img');
       imageElement.setAttribute('src', 'images/ACDCBrianJohnson800_10_20.jpg');
-      imageELement.setAttribute('onclick', 'biggerImage()')
+      imageElement.setAttribute('onclick', 'biggerImage()');
+      imageElement.setAttribute('class', 'active');
       function biggerImage() {
-        let big = document.getElementById('img1')
-        big.style.transform = "scale(2)"
-        big.setAttribute('class', 'active')
+        imageElement.style.transform = "scale(2)"
       }
+      divElement.append(imageElement);
+      document.body.appendChild(divElement);
     </script>
   </body>
 </html>
