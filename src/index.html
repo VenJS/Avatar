@@ -15,19 +15,17 @@
       <button class="button">Boom?</button>
     </div>
     <script defer>
-      let divElement = document.createElement('div');
-      divElement.setAttribute('class', 'image');
       let imageElement = document.createElement('img');
       imageElement.setAttribute('src', 'images/ACDCBrianJohnson800_10_20.jpg');
-      imageElement.setAttribute('onclick', 'biggerImage()');
       imageElement.setAttribute('class', 'active');
+      let divElement = document.createElement('div');
+      divElement.setAttribute('class', 'image');
+      divElement.setAttribute('onclick', 'biggerImage()');
       divElement.append(imageElement);
       document.body.appendChild(divElement);
       function biggerImage() {
         divElement.style.transform = "scale(2)"
       }
-
-      
     </script>
   </body>
 </html>
