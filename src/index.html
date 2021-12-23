@@ -22,15 +22,15 @@
       // divElement.append(imageElement);
       // document.body.appendChild(divElement);
       let divElement = document.createElement('div');
-        divElement.className = 'image';
-        divElement.setAttribute('onclick', 'biggerImage()');
-        let profile = document.createElement('img');
-        profile.setAttribute('src', 'images/ACDCBrianJohnson800_10_20.jpg');
-        divElement.append(profile);
-        document.body.appendChild(divElement)
+      let profile = document.createElement('img');
+      profile.setAttribute('src', 'images/ACDCBrianJohnson800_10_20.jpg');
+      profile.className = 'image';
+      profile.setAttribute('onclick', 'biggerImage()');
+      divElement.append(profile);
+      document.body.appendChild(divElement);
       function biggerImage() {
-        divElement.style.transform = "scale(2)";
-        divElement.className = 'active';
+        profile.style.transform = "scale(2)";
+        profile.className = 'active';
       }
 
     
